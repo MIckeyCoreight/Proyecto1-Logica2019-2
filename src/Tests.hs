@@ -49,7 +49,7 @@ main = do
   let p6 = Disy na (Disy c nd)
   let p7 = Disy a (Disy b c)
   let p8 = Disy na (Disy nb nc)
-  
+
   let conj = [p1, p2, p3, p4, p5, p6, p7, p8]
   -- Deberia imprimir False
   print $satisfConj conj
@@ -64,7 +64,7 @@ main = do
   -- Revisa que la formula efectivamente este en FNC, o implementa una
   -- funcion que lo cheque por ti ;)
   print $fnc f
-  
+
   let g = Disy (Disy (Disy a b) (Conj c d)) (Disy a c)
   print g
   print $fnc g
